@@ -1,1 +1,2 @@
-# epidemicAssistant
+# 仿微信网页对话，后台为医疗对话demo
+##需要jQuery的支持访问后台服务
