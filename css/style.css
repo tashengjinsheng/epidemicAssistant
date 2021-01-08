@@ -1,3 +1,9 @@
+body {
+    margin: 0 auto;
+    position: relative;
+    width: 40%;
+}
+
 /*第一页*/
 .first-page {
     position: fixed;
@@ -34,7 +40,7 @@
 .header {
     height: 44px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background: #2b2b2b;
@@ -82,7 +88,7 @@
 
 /*内容开始*/
 .chat-list {
-    position: fixed;
+    position: absolute;
     top: 44px;
     left: 0;
     right: 0;
@@ -154,7 +160,7 @@
 }
 /*底部开始*/
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: 50px;
     border-top: 1px solid #ddd;
