@@ -326,7 +326,7 @@ $('.inputname').addEventListener("keyup", function(event) {
         text_field.value = "";
         jQuery.ajax({
               type: "post",
-              url: "http://9.135.100.72:8001",
+              url: "http://9.135.95.188:8001",
               data: JSON.stringify({"text": message, "dialog_id": uid}),
               contentType:"application/json;charset=utf-8",
               dataType:"json", 

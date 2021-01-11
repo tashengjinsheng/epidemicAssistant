@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     position: relative;
-    width: 40%;
+    width: 65%;
 }
 
 /*第一页*/
@@ -95,6 +95,11 @@ body {
     bottom: 50px;
     background: #ebebeb;
     transition: bottom 0.3s;
+    overflow-y: scroll;
+}
+
+.chat-list p {
+    overflow-wrap: break-word;
 }
 
 .avata {
