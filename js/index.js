@@ -156,6 +156,8 @@ $('.js-context').onclick = function () {
         addClass(firstPage, 'hide');
         addClass($('.footer'), 'footer-bottom');
         addClass($('.message-select'), 'messages-bottom');
+        message='您好，我是新冠疫苗智能问答助手，您可以这么问我：<br/>是否有必要接种新冠疫苗<br/>疫苗的接种费用是多少<br/>疫苗接种地点<br/>开展新冠疫苗紧急接种重点人群包括哪些<br/>疫苗安全性有保证吗<br/>有哪些情况应暂缓接种新冠疫苗<br/>接种疫苗后有不良反应吗<br/>接种新冠疫苗后是否就不会得病<br/>新冠疫苗需要打几针，隔多久打';
+        appendMessage('left', message);
         // star();
     }, 1000);
 
@@ -326,7 +328,7 @@ $('.inputname').addEventListener("keyup", function(event) {
         text_field.value = "";
         jQuery.ajax({
               type: "post",
-              url: "http://9.135.95.188:8001",
+              url: "http://9.135.95.188:443",
               data: JSON.stringify({"text": message, "dialog_id": uid}),
               contentType:"application/json;charset=utf-8",
               dataType:"json", 
